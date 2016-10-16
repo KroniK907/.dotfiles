@@ -17,6 +17,7 @@ $
 :q
 :PluginInstall
 :bd
+:bc
 :sh
 :gf
 :gt
@@ -28,7 +29,6 @@ $
 :bn
 :bp
 :cb
-:bc
 :g
 :Q
 :e ../.vim/plugins.vim
@@ -48,10 +48,8 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	"/
-	"/ CtrlP
-	"/
+"0	LINE	0
+	"-------------Auto-Commands--------------"
 "1	LINE	0
 	../
 "2	LINE	0
@@ -70,32 +68,36 @@ $
 	./
 "9	LINE	0
 	
-"-	CHAR	0
-	powerline/powerline
+""-	CHAR	0
+	Commands
 
 # File marks:
-'0  5  0  ~/.vimrc
-'1  1  0  ~/retasker/app/Http/Controllers/Controller.php
-'2  2  0  ~/retasker/app/Http/Controllers
-'3  6  0  ~/.vimrc
-'4  136  0  ~/.vimrc
-'5  12  30  ~/.vim/plugins.vim
-'6  26  0  ~/.vimrc
-'7  29  4  ~/retasker/app/Http/Controllers/Auth/ForgotPasswordController.php
-'8  129  0  ~/.vimrc
-'9  115  9  ~/.vimrc
+'0  165  0  ~/.vimrc
+'1  1  0  ~/.ssh/id_rsa.pub
+'2  1  0  ~/.gitconfig
+'3  5  0  ~/.vimrc
+'4  1  0  ~/retasker/app/Http/Controllers/Controller.php
+'5  2  0  ~/retasker/app/Http/Controllers
+'6  6  0  ~/.vimrc
+'7  148  0  ~/.vimrc
+'8  12  30  ~/.vim/plugins.vim
+'9  26  0  ~/.vimrc
 
 # Jumplist (newest first):
--'  5  0  ~/.vimrc
+-'  165  0  ~/.vimrc
+-'  26  25  ~/.vim/plugins.vim
+-'  5  5  ~/.vimrc
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.gitconfig
 -'  24  36  ~/.vim/plugins.vim
 -'  1  0  ~/retasker/app/Http/Controllers/Controller.php
 -'  2  0  ~/retasker/app/Http/Controllers
 -'  6  0  ~/.vimrc
 -'  14  0  ~/.vim/plugins.vim
 -'  116  0  ~/.vimrc
--'  136  0  ~/.vimrc
+-'  148  0  ~/.vimrc
 -'  13  30  ~/.vim/plugins.vim
--'  137  22  ~/.vimrc
+-'  157  22  ~/.vimrc
 -'  30  16  ~/.vimrc
 -'  12  30  ~/.vim/plugins.vim
 -'  11  0  ~/.vim/plugins.vim
@@ -107,7 +109,7 @@ $
 -'  16  0  ~/retasker/app/Http/Kernel.php
 -'  29  4  ~/retasker/app/Http/Controllers/Auth/ForgotPasswordController.php
 -'  1  0  ~/retasker/app/Http/Kernel.php
--'  129  0  ~/.vimrc
+-'  141  0  ~/.vimrc
 -'  148  7  ~/retasker/vendor/phpunit/php-code-coverage/tests/_files/Report/HTML/CoverageForClassWithAnonymousFunction/source_with_class_and_anonymous_function.php.html
 -'  190  5  ~/retasker/vendor/phpunit/php-code-coverage/tests/_files/Report/HTML/CoverageForBankAccount/BankAccount.php.html
 -'  5  0  ~/retasker/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css
@@ -130,13 +132,13 @@ $
 -'  14  0  ~/.bash_profile
 -'  20  0  ~/.bash_profile
 -'  1  0  ~/bash_profile
--'  148  0  ~/.vimrc
+-'  177  0  ~/.vimrc
 -'  17  4  ~/.bash_profile
 -'  15  13  ~/retasker/routes/web.php
 -'  1  0  ~/retasker/resources
 -'  1  0  ~/retasker/public
 -'  1  0  ~/retasker/storage
--'  138  0  ~/.vimrc
+-'  158  0  ~/.vimrc
 -'  1  0  ~/retasker/app/User.php
 -'  63  21  ~/.vimrc
 -'  9  3  ~/retasker/.gitignore
@@ -151,12 +153,12 @@ $
 -'  1  0  ~/NetrwTreeListing 1
 -'  9  25  ~/.vim/plugins.vim
 -'  15  13  ~/.vimrc
--'  143  0  ~/.vimrc
+-'  172  0  ~/.vimrc
 -'  1  0  ~/.vimrc
 -'  58  0  ~/.vimrc
--'  144  0  ~/.vimrc
+-'  173  0  ~/.vimrc
 -'  13  0  ~/.bash_profile
--'  141  37  ~/.vimrc
+-'  161  37  ~/.vimrc
 -'  1  0  ~/.bash_proffile
 -'  64  0  ~/.vimrc
 -'  11  0  ~/.bash_profile
@@ -176,36 +178,15 @@ $
 -'  190  5  ~/retasker/vendor/phpunit/php-code-coverage/tests/_files/Report/HTML/CoverageForBankAccount/BankAccount.php.html
 -'  5  0  ~/retasker/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css
 -'  5  0  ~/retasker/public/css/app.css
+-'  1  0  ~/retasker/app/Http/Controllers/Controller.php
+-'  2  0  ~/retasker/app/Http/Controllers
 
 # History of marks within files (newest to oldest):
 
 > ~/.vimrc
-	"	5	0
-	^	136	44
-	.	136	43
-	+	86	0
-	+	84	19
-	+	85	8
-	+	86	19
-	+	142	0
-	+	85	8
-	+	86	8
-	+	83	0
-	+	15	13
-	+	6	0
-	+	5	20
-	+	3	0
-	+	3	32
-	+	55	5
-	+	71	5
-	+	71	5
-	+	71	5
-	+	86	8
-	+	71	0
-	+	70	30
-	+	83	19
-	+	85	19
-	+	86	19
+	"	165	0
+	^	165	0
+	.	164	35
 	+	71	19
 	+	81	0
 	+	74	12
@@ -224,11 +205,11 @@ $
 	+	65	15
 	+	92	0
 	+	91	0
-	+	142	0
+	+	171	0
 	+	92	30
 	+	106	37
 	+	103	36
-	+	142	0
+	+	171	0
 	+	51	0
 	+	65	26
 	+	92	20
@@ -236,7 +217,7 @@ $
 	+	93	0
 	+	103	0
 	+	95	11
-	+	141	0
+	+	161	0
 	+	113	1
 	+	112	7
 	+	119	0
@@ -254,57 +235,80 @@ $
 	+	114	0
 	+	115	22
 	+	118	59
-	+	121	2
-	+	123	1
-	+	122	7
+	+	133	2
+	+	135	1
+	+	134	7
 	+	65	0
-	+	125	0
-	+	138	0
-	+	129	19
+	+	137	0
+	+	158	0
+	+	141	19
 	+	63	21
-	+	148	0
+	+	177	0
 	+	116	13
 	+	46	13
 	+	116	13
 	+	115	9
-	+	126	18
-	+	129	24
+	+	138	18
+	+	141	24
 	+	63	19
-	+	129	17
+	+	141	17
 	+	27	27
 	+	27	44
 	+	28	0
 	+	27	34
+	+	143	0
+	+	142	0
+	+	147	31
+	+	144	9
+	+	147	3
+	+	30	16
+	+	157	0
+	+	148	43
+	+	149	0
+	+	150	0
+	+	151	10
+	+	156	49
+	+	154	13
+	+	130	33
 	+	131	0
 	+	130	0
-	+	135	31
-	+	132	9
-	+	135	3
-	+	30	16
-	+	137	0
-	+	136	43
+	+	129	0
+	+	130	0
+	+	129	0
+	+	127	1
+	+	126	66
+	+	125	0
+	+	126	65
+	+	124	1
+	+	123	1
+	+	126	0
+	+	126	65
+	+	162	0
+	+	169	0
+	+	162	28
+	+	164	35
 
 > ~/.vim/plugins.vim
-	"	24	36
-	^	24	37
-	.	24	36
-	+	29	2
+	"	26	25
+	^	26	26
+	.	26	25
+	+	31	2
 	+	1	0
 	+	4	0
 	+	5	0
 	+	8	0
 	+	6	0
 	+	8	0
-	+	27	0
-	+	25	0
-	+	27	0
-	+	28	0
 	+	29	0
+	+	27	0
+	+	29	0
+	+	30	0
+	+	31	0
 	+	1	0
 	+	9	25
 	+	10	27
 	+	11	7
-	+	25	0
+	+	27	0
 	+	11	22
 	+	12	8
 	+	11	0
@@ -312,6 +316,28 @@ $
 	+	13	30
 	+	14	26
 	+	24	36
+	+	25	6
+	+	26	25
+
+> ~/profile/ControlP
+	"	1	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	31	0
+	+	2	0
+
+> ~/.ssh/id_rsa.pub
+	"	1	0
+
+> ~/.gitconfig
+	"	1	0
 
 > ~/retasker/.git/index
 	"	1	0

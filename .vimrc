@@ -118,6 +118,18 @@ nmap <Leader>ee <C-p>
 "Set up the CtrlP window to be on top and sort top to bottom
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
+" The Silver Searcher
+if executable('ag')
+	" Use ag over grep
+	set grepprg=ag\ --nogroup\ --nocolor
+	
+	" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+	let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+	" ag is fast enough that CtrlP doesn't need to cache
+	let g:ctrlp_use_caching = 0
+endif
+
 "/
 "/ Ctags
 "/
@@ -134,6 +146,23 @@ nmap <leader>g :tf<cr>
 
 let g:airline_inactive_collapse=0
 let g:airline#extensions#tabline#enabled = 1
+
+"/
+"/ Greplace
+"/
+
+set grepprg=airlineg
+
+let g:grep_cmd_opts = '--line-numbers --noheading'
+
+
+
+
+
+"------------Laravel-Specific--------------"
+nmap <Leader>lr :e app/Http/routes.php<cr>
+nmap <Leader>lm :!php artisan make:
+
 
 
 

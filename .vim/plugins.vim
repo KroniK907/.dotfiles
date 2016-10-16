@@ -22,6 +22,8 @@ Plugin 'stanangeloff/php.vim'
 Plugin 'wavded/vim-stylus'
 Plugin 'othree/html5.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'rking/ag.vim'
+Plugin 'skwp/greplace.vim'
 
 
 call vundle#end()            " required
