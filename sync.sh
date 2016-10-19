@@ -11,3 +11,5 @@ ln -s $dir/.vim* $HOME
 ln -s $dir/.V* $HOME
 ln -s $dir/.bash* $HOME
 
+echo "Please run the following commands"
+echo "sudo yum install ctags the_silver_searcher"
