@@ -24,6 +24,10 @@ Plugin 'othree/html5.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
+Plugin 'sirver/ultisnips'
+Plugin 'tobys/vmustache'
+Plugin 'tobys/pdv'
+Plugin 'honza/vim-snippets'
 
 
 call vundle#end()            " required

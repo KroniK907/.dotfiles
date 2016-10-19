@@ -62,7 +62,11 @@ imap <C-s> <C-O>:w<cr>
 "shortcut for buffer previous
 nmap <Leader>b <C-^>
 
+"Quicker way to the command line
+nmap <Leader><Leader> :
 
+"Close buffer with Ctrl-Q
+nmap <C-q> :bd<c>
 
 
 
@@ -155,6 +159,22 @@ set grepprg=airlineg
 
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
+"/
+"/ Fugitive
+"/
+
+"Quick leader mappings for common git commands
+nmap <Leader>gc :Gcommit<cr>
+nmap <Leader>gm :Gmerge<cr>
+nmap <Leader>gf :Gfetch<cr>
+nmap <Leader>gp :Gpush<cr>
+nmap <Leader>gl :Glog<cr>
+nmap <Leader>gd :Gdiff<cr>
+nmap <Leader>gr :Gremove
+nmap <Leader>ga :Gadd<cr>
+nmap <Leader>ggc :Gcommit -a<cr>
+nmap <Leader>gga :Gadd -A<cr>
+
 
 
 
@@ -176,3 +196,5 @@ augroup autosourcing
 	autocmd BufWritePost .vimrc source %
 augroup END
 
+"make vim think blade.php files are html files
+autocmd BufNewFile,BufRead *.blade.php setlocal ft=html
