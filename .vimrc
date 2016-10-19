@@ -13,6 +13,13 @@ set backspace=indent,eol,start			"Make backspace behave like every other editor.
 let mapleader = ';' 				"The default leader is \, but a comma is much better.
 set splitbelow
 set splitright
+set autowriteall				"Auto Write the file when switching buffers
+set tabstop=8					"Set tab character to standard width
+set expandtab					"Indent using spaces
+set shiftwidth=4				"indents should be 4 columns
+set softtabstop=4                               "^^
+set autoindent                                  "Turns on Auto Indent
+set smartindent                                 "Turns on smart indent
 
 
 
@@ -171,9 +178,42 @@ nmap <Leader>gp :Gpush<cr>
 nmap <Leader>gl :Glog<cr>
 nmap <Leader>gd :Gdiff<cr>
 nmap <Leader>gr :Gremove
-nmap <Leader>ga :Gadd<cr>
-nmap <Leader>ggc :Gcommit -a<cr>
-nmap <Leader>gga :Gadd -A<cr>
+nmap <Leader>gca :Gcommit -a<cr>
+
+"/
+"/ Php Namespace
+"/
+
+function! IPhpInsertUse()
+	call PhpInsertUse()
+	call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
+
+function! IPhpExpandClass()
+	call PhpExpandClass()
+	call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+
+"/
+"/ Indent Guides
+"/
+
+"Highlight colors
+hi IndentGuidesOdd  ctermbg=234
+hi IndentGuidesEven ctermbg=238
+
+"set width of highlight
+let g:indent_guides_guide_size = 1
+
+"start guides on second indent
+let g:indent_guides_start_level = 2
+
+"Auto start with vim
+let g:indent_guides_enable_on_vim_startup = 0
 
 
 
@@ -182,8 +222,6 @@ nmap <Leader>gga :Gadd -A<cr>
 "------------Laravel-Specific--------------"
 nmap <Leader>lr :e app/Http/routes.php<cr>
 nmap <Leader>lm :!php artisan make:
-
-
 
 
 

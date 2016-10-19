@@ -28,6 +28,9 @@ Plugin 'sirver/ultisnips'
 Plugin 'tobys/vmustache'
 Plugin 'tobys/pdv'
 Plugin 'honza/vim-snippets'
+Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'editorconfig/editorconfig-vim'
 
 
 call vundle#end()            " required
