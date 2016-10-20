@@ -21,8 +21,13 @@ set softtabstop=4                               "^^
 set autoindent                                  "Turns on Auto Indent
 set smartindent                                 "Turns on smart indent
 
-set guifont=Lucida_Console:h11                  "Sets font 
+set guifont=Lucida\ Console\ 11                  "Sets font 
 set linespace=8
+
+set guioptions-=m  "menu bar
+set guioptions-=T  "toolbar
+set guioptions-=r  "scrollbar
+
 
 
 
