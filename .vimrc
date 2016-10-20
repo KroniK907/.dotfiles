@@ -21,6 +21,8 @@ set softtabstop=4                               "^^
 set autoindent                                  "Turns on Auto Indent
 set smartindent                                 "Turns on smart indent
 
+set guifont=Lucida_Console:h11              "Sets font to DejaVu Sans
+set linespace=8
 
 
 
