@@ -13,6 +13,8 @@ export PATH
 export LANG="en_US.utf8"
 export LANGUAGE="en_US.utf8"
 
+alias vi=vim
+
 # Disable terminal Ctrl+ Commands while in vim. 
 vim()
 {
