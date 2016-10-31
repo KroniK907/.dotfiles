@@ -15,6 +15,9 @@ export LANGUAGE="en_US.utf8"
 
 alias vi=vim
 
+EDITOR=/usr/bin/vim
+export EDITOR
+
 # Disable terminal Ctrl+ Commands while in vim. 
 vim()
 {
