@@ -129,6 +129,9 @@ let g:NERDTreeDirArrowCollapsible = 'V'
 "Stop Nerdtree from Hijacking Vinegar
 let g:NERDTreeHijackNetrw = 0
 
+"Auto close on open file
+let NERDTreeQuitOnOpen = 1
+
 "/
 "/ CtrlP
 "/
