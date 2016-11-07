@@ -153,10 +153,7 @@ endif
 "/
 
 "Ctags shortcut
-nmap <Leader>f :tag<space>
-
-"Ctags Quick Find selected function
-nmap <leader>g :tf<cr>
+nmap <Leader>f <C-]>
 
 "/
 "/ Airline
