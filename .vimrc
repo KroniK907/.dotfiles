@@ -46,6 +46,7 @@ hi vertsplit ctermbg=bg ctermfg=fg
 
 
 
+
 "-------------Search--------------"
 set hlsearch
 set incsearch
@@ -229,17 +230,10 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 
 "Auto start with vim
-let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_enable_on_vim_startup = 1
 
 "indent guides toggle
 nmap <Leader>tg :IndentGuidesToggle<cr>
-
-"/
-"/ Indent Guides
-"/
-
-"automatically add commas or semicolons
-let g:auto_comma_or_semicolon = 1
 
 
 
@@ -262,3 +256,6 @@ augroup END
 
 "make vim think blade.php files are html files
 autocmd BufNewFile,BufRead *.blade.php setlocal ft=html
+
+"make vim think .inc files are php files
+autocmd BufNewFile,BufRead *.inc setlocal ft=php
