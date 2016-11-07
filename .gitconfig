@@ -1,3 +1,5 @@
 [user]
 	email = Daniel@nusalaska.com
 	name = Daniel Kranich
+[core]
+	editor = /usr/bin/vim

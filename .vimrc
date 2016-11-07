@@ -18,8 +18,8 @@ set tabstop=8					"Set tab character to standard width
 set expandtab					"Indent using spaces
 set shiftwidth=4				"indents should be 4 columns
 set softtabstop=4                               "^^
-set autoindent                                  "Turns on Auto Indent
-set smartindent                                 "Turns on smart indent
+"set autoindent                                  "Turns on Auto Indent
+"set smartindent                                 "Turns on smart indent
 
 set guifont=Lucida\ Console\ 11                  "Sets font 
 set linespace=8
@@ -82,6 +82,9 @@ nmap <Leader><Leader> :
 "Close buffer with Ctrl-Q
 nmap <C-q> :bd<c>
 
+"alias :Delete to delete current file
+nmap <Leader>ddd :call delete(expand('%')) \| bdelete! 
+
 
 
 
@@ -114,7 +117,7 @@ nmap <C-h> <C-W><C-H>
 "/
 
 "Quick Toggle Nerd Tree
-nmap <Leader>t :NERDTreeToggle<cr>
+nmap <Leader>tn :NERDTreeToggle<cr>
 
 "Search within file
 nmap <C-R> :CtrlPBufTag<cr>
@@ -125,6 +128,9 @@ let g:NERDTreeDirArrowCollapsible = 'V'
 
 "Stop Nerdtree from Hijacking Vinegar
 let g:NERDTreeHijackNetrw = 0
+
+"Auto close on open file
+let NERDTreeQuitOnOpen = 1
 
 "/
 "/ CtrlP
@@ -154,6 +160,12 @@ endif
 
 "Ctags shortcut
 nmap <Leader>f <C-]>
+
+"Reindex project
+nmap <Leader>tr :!ctags -R --exclude=vendor --exclude=node_modules<cr>
+
+"Tell vim where to find tags file
+set tags=tags;$HOME
 
 "/
 "/ Airline
@@ -219,12 +231,22 @@ let g:indent_guides_start_level = 2
 "Auto start with vim
 let g:indent_guides_enable_on_vim_startup = 0
 
+"indent guides toggle
+nmap <Leader>tg :IndentGuidesToggle<cr>
+
+"/
+"/ Indent Guides
+"/
+
+"automatically add commas or semicolons
+let g:auto_comma_or_semicolon = 1
+
 
 
 
 
 "------------Laravel-Specific--------------"
-nmap <Leader>lr :e app/Http/routes.php<cr>
+nmap <Leader>lr :e routes/web.php<cr>
 nmap <Leader>lm :!php artisan make:
 
 

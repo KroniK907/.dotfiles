@@ -10,6 +10,14 @@ fi
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin
 export PATH
 
+export LANG="en_US.utf8"
+export LANGUAGE="en_US.utf8"
+
+alias vi=vim
+
+EDITOR=/usr/bin/vim
+export EDITOR
+
 # Disable terminal Ctrl+ Commands while in vim. 
 vim()
 {

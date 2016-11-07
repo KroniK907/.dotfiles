@@ -1,2 +1,8 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhist_cnt =0
+=======
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/daniel/projects/retasker/app'
+let g:netrw_dirhist_2='/home/daniel/projects/retasker/database/migrations'
+>>>>>>> 2cc493d0fb29e8727a1dd59e2cf4c0fb5546677c
