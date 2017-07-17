@@ -86,6 +86,15 @@ nmap <C-q> :bd<c>
 "alias :Delete to delete current file
 nmap <Leader>ddd :call delete(expand('%')) \| bdelete! 
 
+"Make paste command auto indent
+nmap p [p
+
+"use jj as escape. Easier way to exit insert mode
+inoremap jj <ESC>
+
+"use jw to exit insert mode and imediately save 
+inoremap jw <ESC>:w<cr> 
+
 
 
 

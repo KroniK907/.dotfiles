@@ -3,3 +3,7 @@
 	name = Daniel Kranich
 [core]
 	editor = /usr/bin/vim
+[merge]
+	ff = false
+[push]
+	default = simple

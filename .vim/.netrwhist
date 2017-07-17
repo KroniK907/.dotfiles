@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
-let g:netrw_dirhist_cnt =0
-=======
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/daniel/projects/retasker/app'
-let g:netrw_dirhist_2='/home/daniel/projects/retasker/database/migrations'
->>>>>>> 2cc493d0fb29e8727a1dd59e2cf4c0fb5546677c
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/Daniel/.dotfiles/.vim/bundle/vim-snippets/UltiSnips'
+let g:netrw_dirhist_2='/home/Daniel/dev.ccrwriter.com/ccrwriter'
+let g:netrw_dirhist_3='/home/Daniel/.dotfiles/.vim/bundle/vim-snippets/UltiSnips'
+let g:netrw_dirhist_4='/home/Daniel/dev.ccrwriter.com/ccrwriter'
+let g:netrw_dirhist_5='/home/Daniel/dev.ccrwriter.com/ccrwriter/include'
+let g:netrw_dirhist_6='/home/Daniel/dev.ccrwriter.com/ccrwriter/include/classes'
+let g:netrw_dirhist_7='/home/Daniel/dev.ccrwriter.com/ccrwriter/include/classes/CCRWriter'
+let g:netrw_dirhist_8='/home/Daniel/dev.ccrwriter.com/ccrwriter/include/classes/CCRWriter/form'
