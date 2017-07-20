@@ -244,6 +244,31 @@ let g:indent_guides_enable_on_vim_startup = 1
 "indent guides toggle
 nmap <Leader>tg :IndentGuidesToggle<cr>
 
+"/
+"/ youcompleteme
+"/
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+"/
+"/ UtiliSnips
+"/
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger="<cr>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+"/
+"/ vim-snippets
+"/
+
+"Set Author Name
+let g:snips_author="Daniel Kranich"
+
 
 
 

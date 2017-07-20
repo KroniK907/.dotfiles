@@ -4,38 +4,60 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
+"Vundle
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-vinegar'
+
+"File Management
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-vinegar'
+Plugin 'danro/rename.vim'
+
+"Asthetics
 Plugin 'vim-airline/vim-airline'
+Plugin 'nathanaelkane/vim-indent-guides'
+
+"Syntax Highlighting
+Plugin 'pangloss/vim-javascript'
+Plugin 'stanangeloff/php.vim'
+Plugin 'othree/html5.vim'
+Plugin 'elzr/vim-json'
+Plugin 'wavded/vim-stylus'
+
+"Git Related
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
+
+"Linting
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
-"Plugin 'valloric/youcompleteme'
-Plugin 'pangloss/vim-javascript'
+
+"Code Formatting Tools
+Plugin 'tobys/vmustache'
+Plugin 'townk/vim-autoclose'
 Plugin 'godlygeek/tabular'
-Plugin 'stanangeloff/php.vim'
-Plugin 'wavded/vim-stylus'
-Plugin 'othree/html5.vim'
+Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'tpope/vim-surround'
+Plugin 'lfilho/cosco.vim'
+Plugin 'editorconfig/editorconfig-vim'
+
+"Code Snippet Tools
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'arnaud-lb/vim-php-namespace'
+
+"Code Navigation
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
-Plugin 'sirver/ultisnips'
-Plugin 'tobys/vmustache'
-Plugin 'tobys/pdv'
-Plugin 'honza/vim-snippets'
-Plugin 'arnaud-lb/vim-php-namespace'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'ConradIrwin/vim-bracketed-paste'
-Plugin 'danro/rename.vim'
-Plugin 'townk/vim-autoclose'
+
+"Plugin Utilities
 Plugin 'tpope/vim-repeat'
-Plugin 'lfilho/cosco.vim'
+Plugin 'ervandew/supertab'
+
+"Autocomplete
+"Plugin 'valloric/youcompleteme'
+
 
 
 call vundle#end()            " required
