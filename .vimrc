@@ -142,6 +142,9 @@ nmap <Leader>ee <C-p>
 "Set up the CtrlP window to be on top and sort top to bottom
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
+"Ignore folders for CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\|public\|vendor'
+
 " The Silver Searcher
 if executable('ag')
 	" Use ag over grep
@@ -248,6 +251,16 @@ let g:auto_comma_or_semicolon = 1
 "------------Laravel-Specific--------------"
 nmap <Leader>lr :e routes/web.php<cr>
 nmap <Leader>lm :!php artisan make:
+
+
+
+
+"-------------Filetype Maping--------------"
+"Use html highlighting with blade.php
+au BufReadPost *.blade.php set syntax=html
+au BufReadPost *.vue set syntax=javascript
+au BufReadPost *.js set syntax=javascript
+
 
 
 
