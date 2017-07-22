@@ -46,6 +46,7 @@ hi vertsplit ctermbg=bg ctermfg=fg
 
 
 
+
 "-------------Search--------------"
 set hlsearch
 set incsearch
@@ -84,6 +85,15 @@ nmap <C-q> :bd<c>
 
 "alias :Delete to delete current file
 nmap <Leader>ddd :call delete(expand('%')) \| bdelete! 
+
+"Make paste command auto indent
+nmap p [p
+
+"use jj as escape. Easier way to exit insert mode
+inoremap jj <ESC>
+
+"use jw to exit insert mode and imediately save 
+inoremap jw <ESC>:w<cr> 
 
 
 
@@ -161,7 +171,7 @@ endif
 "/ Ctags
 "/
 
-"Ctags Quick Find selected function
+"Ctags shortcut
 nmap <Leader>f <C-]>
 
 "Reindex project
@@ -232,17 +242,35 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 
 "Auto start with vim
-let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_enable_on_vim_startup = 1
 
 "indent guides toggle
 nmap <Leader>tg :IndentGuidesToggle<cr>
 
 "/
-"/ Indent Guides
+"/ youcompleteme
 "/
 
-"automatically add commas or semicolons
-let g:auto_comma_or_semicolon = 1
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+"/
+"/ UtiliSnips
+"/
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger="<cr>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+"/
+"/ vim-snippets
+"/
+
+"Set Author Name
+let g:snips_author="Daniel Kranich"
 
 
 
@@ -275,3 +303,6 @@ augroup END
 
 "make vim think blade.php files are html files
 autocmd BufNewFile,BufRead *.blade.php setlocal ft=html
+
+"make vim think .inc files are php files
+autocmd BufNewFile,BufRead *.inc setlocal ft=php
