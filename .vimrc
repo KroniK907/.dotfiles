@@ -8,6 +8,21 @@ so ~/.vim/plugins.vim
 
 
 
+"----------------Functions---------------"
+
+"Insert with indent
+function! IndentWithI()
+    if len(getline('.')) == 0
+        return "\"_cc"
+    else
+        return "i"
+    endif
+endfunction
+
+
+
+
+
 "-------------General Settings--------------"
 set backspace=indent,eol,start			"Make backspace behave like every other editor.
 let mapleader = ';' 				"The default leader is \, but a comma is much better.
@@ -94,6 +109,10 @@ inoremap jj <ESC>
 
 "use jw to exit insert mode and imediately save 
 inoremap jw <ESC>:w<cr> 
+
+"auto indent when entering insert mode
+nnoremap <expr> i IndentWithI()
+
 
 
 
@@ -261,7 +280,7 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 "/
 
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger="<cr>"
+"let g:UltiSnipsExpandTrigger="<cr>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
@@ -271,6 +290,22 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "Set Author Name
 let g:snips_author="Daniel Kranich"
+
+"/
+"/ Cosco
+"/
+
+"Always run cosco
+let g:auto_comma_or_semicolon = 1
+
+"Make it ignore comment lines
+let g:cosco_ignore_comment_lines = 1
+
+"Filetype whitelist
+let g:cosco_filetype_whitelist = ['php', 'javascript']
+
+"run cosco when making a newline
+imap <cr> <cr><Esc>:CommaOrSemiColonPrevious<cr>i
 
 
 
@@ -306,3 +341,5 @@ autocmd BufNewFile,BufRead *.blade.php setlocal ft=html
 
 "make vim think .inc files are php files
 autocmd BufNewFile,BufRead *.inc setlocal ft=php
+
+"--------------Random Shit---------------"

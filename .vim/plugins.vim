@@ -37,8 +37,9 @@ Plugin 'townk/vim-autoclose'
 Plugin 'godlygeek/tabular'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'tpope/vim-surround'
-Plugin 'lfilho/cosco.vim'
+Plugin 'KroniK907/cosco.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'scrooloose/nerdcommenter'
 
 "Code Snippet Tools
 Plugin 'sirver/ultisnips'
@@ -46,7 +47,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'arnaud-lb/vim-php-namespace'
 
 "Code Navigation
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
@@ -56,7 +56,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'ervandew/supertab'
 
 "Autocomplete
-"Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'
 
 
 
