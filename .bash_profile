@@ -26,3 +26,17 @@ vim()
     command vim "$@"
     stty "$STTYOPTS"
 }
+
+
+# One time password for ssh key at start of each session
+SSHAGENT=/usr/bin/ssh-agent
+SSHAGENTARGS="-s"
+if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+        eval `$SSHAGENT $SSHAGENTARGS`
+        trap "kill $SSH_AGENT_PID" 0
+fi
+
+ssh-add -l >/dev/null 2>&1
+if [ $? -eq 1 ]; then
+        ssh-add
+fi
